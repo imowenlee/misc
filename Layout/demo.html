@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+.parallax {
+    /* The image used */
+    background-image: url("http://www.w3schools.com/howto/img_parallax.jpg");
+
+    /* Set a specific height */
+    min-height: 100px;
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.list {
+   position: absolut;
+   height:900px;
+   background-color:red;
+   font-size: 14px;
+}
+.list2 {
+   position: absolut;
+   height:900px;
+   background-color:blue;
+   font-size: 14px;
+}
+.img {
+    float: left;
+}
+.item {
+    display: inline;
+    padding-left: 10px;
+}
+.body {
+   position: relative;
+}
+</style>
+</head>
+<body class="body">
+<div class="list">
+    <ul>
+        <li>
+            <a class="img">
+                <img src="https://s.yimg.com/uu/api/res/1.2/LAdBZccCOdOK7Y9JAo4xCA--/Zmk9c3RyaW07aD0xMDA7cHlvZmY9MDt3PTEwMDtzbT0xO2FwcGlkPXl0YWNoeW9u/http://media.zenfs.com/en-US/video/video.cnbc2.com/adb45890cec0316955514d70c4ff0db2"></img>
+            </a>
+            <div class="item">
+                <h3 class="title">Here's why you need to update your iPhone now, and how to do it</h3>
+                <span class="cite">CNBC</span>
+            </div>
+        </li>
+    </ul>
+</div>
+<div class="parallax"></div>
+<div class="list2">
+Scroll Up and Down this page to see the parallax scrolling effect.
+This div is just here to enable scrolling.
+Tip: Try to remove the background-attachment property to remove the scrolling effect.
+</div>
+
+
+</body>
+</html>

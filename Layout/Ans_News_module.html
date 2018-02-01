@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style type="text/css">
+.holder {
+    width: 760px;
+    height: 150px;
+    position: relative;
+}
+.left {
+    float: left;
+    margin-right: 18px;
+    padding: 6px 0px;
+}
+.mid {
+    float: left;
+    width: 65%;
+    padding: 6px;
+}
+.right {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+}
+.category {
+    color: #324fe1;
+}
+.provider {
+    color: #5e5e5e;
+}
+.title {
+    margin: 10px 0px;
+}
+.list {
+    list-style-type: none;
+}
+.square {
+    padding: 2px;
+}
+.comment {
+    position: absolute;
+    left: -40px;
+    top: 17px;
+    padding: 5px;
+    border: solid 1px #cfcfcf;
+    box-shadow: 0 1px 3px 1px rgba(0,0,0,.08);
+    color: #188fff;
+    border-radius: 3px;
+    background-color: #fff;
+}
+.Dn {
+    display: none;
+}
+.tweet:hover + .comment {
+    display: inline;
+}
+</style>
+
+</head>
+<body>
+<div class="holder">
+    <div class='left'>
+        <img width='190px' src="http://media.zenfs.com/en_us/News/Reuters/2017-02-21T202438Z_2_LYNXMPED1K1AC_RTROPTP_2_USA-TRUMP.JPG"></img>
+    </div>
+    <div class='mid'>
+        <span class='category'>Business</span>
+        <span class='provider'>Reuters</span>
+        <h4 class='title'>U.S. Homeland Security employees locked out of computer networks: sources</h4>
+        <div class='desc'>By Dustin Volz WASHINGTON (Reuters) - U.S. Department of Homeland Security employees in the Washington area and Philadelphia were unable to access some agency</div>
+    </div>
+    <div class='right'>
+        <ul class='list'>
+            <li class='square'>
+                <img class='tweet' width='30px' height='30px' onmouseenter=actionToolTip() onmouseleave=actionToolTip() src="https://socialmediawidgets.files.wordpress.com/2014/03/01_twitter.png" />
+                <span class='comment Dn'>comment</span>
+            </li>
+            <li class='square'>
+                <img class='fb' width='30px' height='30px' src="https://socialmediawidgets.files.wordpress.com/2014/03/02_facebook.png" />
+            </li>
+            <li class='square'>
+                <img class='instagram' width='30px' height='30px' src="https://socialmediawidgets.files.wordpress.com/2014/03/10_instagram.png" />
+            </li>
+        </ul>
+    </div>
+</div>
+<script type="text/javascript">
+    var comment = document.getElementsByClassName("comment")[0];
+    function actionToolTip() {
+        //  comment.classList.toggle('Dn');
+    }
+</script>
+</body>
+</html>

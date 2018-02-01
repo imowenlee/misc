@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+<head>
+</head>
+<body>
+
+    <div class='image'>
+        <img width='190px' src="http://media.zenfs.com/en_us/News/Reuters/2017-02-21T202438Z_2_LYNXMPED1K1AC_RTROPTP_2_USA-TRUMP.JPG"></img>
+    </div>
+
+    <div class='content'>
+        <div class='category'>Business</div>
+        <div class="provider">Reuters</div>
+        <div class='title'><strong>U.S. Homeland Security employees locked out of computer networks: sources</strong></div>
+        <div class='desc'>By Dustin Volz WASHINGTON (Reuters) - U.S. Department of Homeland Security employees in the Washington area and Philadelphia were unable to access some agency</div>
+    </div>
+
+    <div class='share'>
+        <ul class='list'>
+            <li id="liTweet" class='square'>
+                <img id="imgTweet" class='tweet' src="https://socialmediawidgets.files.wordpress.com/2014/03/01_twitter.png" onmouseover="displayComment();" onmouseout="hideComment();" />
+                <span id="spnComment" class='comment Dn'>comment</span>
+            </li>
+            <li class='square'>
+                <img class='fb' src="https://socialmediawidgets.files.wordpress.com/2014/03/02_facebook.png" />
+            </li>
+            <li class='square'>
+                <img class='instagram' src="https://socialmediawidgets.files.wordpress.com/2014/03/10_instagram.png" />
+            </li>
+        </ul>
+    </div>
+
+<style>
+
+.content {
+    float:left;
+    width:500px;
+    margin-left: 30px;
+}
+.share {
+    float:left;
+}
+.image{
+    float:left;
+}
+.holder {
+    width: 760px;
+    height: 150px;
+}
+.category {
+    color: #324fe1;
+    display: inline-block;
+}
+.provider {
+    color: #5e5e5e;
+    display: inline-block;
+}
+.list {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+.comment {
+    border: solid 1px #cfcfcf;
+    box-shadow: 0 1px 3px 1px rgba(0,0,0,.08);
+    color: #188fff;
+    border-radius: 3px;
+    background-color: #fff;
+    padding: 5px;
+
+}
+#liTweet{
+    position:relative;
+}
+#spnComment {
+    position: absolute;
+    top:0;
+    left: -75px;
+}
+
+.tweet {
+    cursor: pointer;
+}
+.tweet:hover + .comment{
+    display: block;
+}
+
+
+.square img {
+    width: 30px;
+    height: 30px;
+}
+.Dn {
+    display: none;
+}
+</style>
+<script>
+    function displayComment()
+    {
+        //document.getElementById("spnComment").style.display = "block";
+
+    }
+    function hideComment()
+    {
+        //document.getElementById("spnComment").style.display = "none";
+    }
+
+</script>
+</body>
+</html>
